@@ -1,0 +1,27 @@
+{
+  "name": "sample",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyamotoshin/LiveStreaming.git"
+  },
+  "keywords": [
+    "techademy"
+  ],
+  "author": "miyamoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miyamotoshin/LiveStreaming/issues"
+  },
+  "homepage": "https://github.com/miyamotoshin/LiveStreaming#readme",
+  "description": "",
+  "dependencies": {
+    "-": "0.0.1",
+    "connect": "^3.7.0",
+    "roles": "0.0.4"
+  }
+}
