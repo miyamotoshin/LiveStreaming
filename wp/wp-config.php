@@ -55,7 +55,7 @@ define( 'DB_COLLATE', '' );
 /**define('WP_HOME','https://livestreaming-dev.azurewebsites.net/wp');*/
 /**define('WP_SITEURL','https://livestreaming-dev.azurewebsites.net');*/
 define('WP_HOME','https://livestreaming.azurewebsites.net/wp');
-define('WP_SITEURL','https://livestreaming.azurewebsites.net');
+define('WP_SITEURL','https://livestreaming.azurewebsites.net/index.php');
 /** 山上コメント */
 
 /**#@+
