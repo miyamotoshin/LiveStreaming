@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '10.6.0'
+        node-version: '14.x'
 
     - name: npm install, build, and test
       run: |
@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'Livestreaming-dev'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3ea183ac2acf4cc7a4dcb2e93b8f5e4e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f2cf3dc26a3d4813a1d02f2130ba866b }}
         package: .
