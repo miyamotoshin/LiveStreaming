@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'livestreaming'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c5c18b51727c410c964b5e76309a8f88 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f81d2b13a13b4a1089c11fc6817b9191 }}
         package: .
