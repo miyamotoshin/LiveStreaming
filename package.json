@@ -1,6 +1,6 @@
 {
   "name": "sample",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "test.php",
   "scripts": {
      "test": "echo \"No test specified\""
@@ -20,8 +20,8 @@
   "homepage": "https://github.com/miyamotoshin/LiveStreaming#readme",
   "description": "",
   "dependencies": {
-    "-": "0.0.1",
-    "connect": "^3.7.0",
-    "roles": "0.0.4"
+    "-": "0.0.2",
+    "connect": "^3.8.0",
+    "roles": "0.0.5"
   }
 }
