@@ -26,20 +26,20 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define( 'DB_NAME', 'mysqldatabase47883' );
-/**define( 'DB_NAME', 'databasename' );*/
+/**define( 'DB_NAME', 'mysqldatabase47883' );*/
+define( 'DB_NAME', 'databasename' );
 
 /** MySQL データベースのユーザー名 */
-/** define( 'DB_USER', 'databaseuser' );*/
-define( 'DB_USER', 'mysqldbuser@livestreaming-mysqldbserver' );
+define( 'DB_USER', 'databaseuser' );
+/** define( 'DB_USER', 'mysqldbuser@livestreaming-mysqldbserver' );*/
 
 /** MySQL データベースのパスワード */
-define( 'DB_PASSWORD', '7Sayosuteki' );
-/**define( 'DB_PASSWORD', 'xxxxxxxxxxxxxxxx' );*/
+/** define( 'DB_PASSWORD', '7Sayosuteki' );*/
+define( 'DB_PASSWORD', 'xxxxxxxxxxxxxxxx' );
 
 /** MySQL のホスト名 */
-define( 'DB_HOST', 'livestreaming-mysqldbserver.mysql.database.azure.com' );
-/*define( 'DB_HOST', 'localhost' );*/
+/*define( 'DB_HOST', 'livestreaming-mysqldbserver.mysql.database.azure.com' );*/
+define( 'DB_HOST', 'localhost' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -52,10 +52,10 @@ define( 'DB_COLLATE', '' );
  * WP_HOME　には設置先URLのトップページの末尾に、/wpをつけてください。
  * ダミーを入力しますので、参照ください
 */
-/**define('WP_HOME','https://livestreaming-dev.azurewebsites.net/wp');*/
-/**define('WP_SITEURL','https://livestreaming-dev.azurewebsites.net');*/
-define('WP_HOME','https://livestreaming.azurewebsites.net/wp');
-define('WP_SITEURL','https://livestreaming.azurewebsites.net/index.php');
+define('WP_HOME','https://livestreaming-dev.azurewebsites.net/wp');
+define('WP_SITEURL','https://livestreaming-dev.azurewebsites.net');
+/**define('WP_HOME','https://livestreaming.azurewebsites.net/wp');*/*/
+/**define('WP_SITEURL','https://livestreaming.azurewebsites.net/');*/
 /** 山上コメント */
 
 /**#@+
