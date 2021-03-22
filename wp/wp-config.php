@@ -31,7 +31,7 @@ define( 'DB_NAME', 'mysqldatabase47883' );
 
 /** MySQL データベースのユーザー名 */
 /**define( 'DB_USER', 'databaseuser' );*/
-define( 'DB_USER', 'mysqldbuser@livestreaming-mysqldbserver' );
+define( 'DB_USER', 'mysqldbuser' );
 
 /** MySQL データベースのパスワード */
 define( 'DB_PASSWORD', '7Sayosuteki' );
