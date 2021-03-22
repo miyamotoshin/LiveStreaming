@@ -1,14 +1,14 @@
 <?php
-echo 'Current PHP version: ' . phpversion();
+echo 'teat1';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-echo 'Current PHP version: ' . phpversion();
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
+echo 'teat2';
+/**require 'PHPMailer/src/Exception.php';*/
+/**require 'PHPMailer/src/PHPMailer.php';*/
 require 'PHPMailer/src/SMTP.php';
 
-echo 'Current PHP version: ' . phpversion();
+echo 'teat2';
 // 文字エンコードを指定
 mb_language('uni');
 mb_internal_encoding('UTF-8');
