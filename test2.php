@@ -1,11 +1,14 @@
 <?php
+echo 'Current PHP version: ' . phpversion();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+echo 'Current PHP version: ' . phpversion();
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+echo 'Current PHP version: ' . phpversion();
 // 文字エンコードを指定
 mb_language('uni');
 mb_internal_encoding('UTF-8');
@@ -13,6 +16,7 @@ mb_internal_encoding('UTF-8');
 // インスタンスを生成（true指定で例外を有効化）
 $mail = new PHPMailer(true);
 
+echo 'Current PHP version: ' . phpversion();
 // 文字エンコードを指定
 $mail->CharSet = 'utf-8';
 
