@@ -6,47 +6,44 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+// 文字エンコードを指定
+mb_language('uni');
+mb_internal_encoding('UTF-8');
 
-$mail = new PHPMailer(true); 
+// インスタンスを生成（true指定で例外を有効化）
+$mail = new PHPMailer(true);
+
+// 文字エンコードを指定
+$mail->CharSet = 'utf-8';
 
 try {
-  //Office365 認証情報
-  $host = 'smtp.office365.com';
-  $username = 'shin.miyamoto@jp.ricoh.com';
-  $password = '9gDi2bgV';
+  // デバッグ設定
+  // $mail->SMTPDebug = 2; // デバッグ出力を有効化（レベルを指定）
+  // $mail->Debugoutput = function($str, $level) {echo "debug level $level; message: $str<br>";};
 
-  //差出人
-  $from = 'shin.miyamoto@jp.ricoh.com';
-  $fromname = '宮本　真';
+  // SMTPサーバの設定
+  $mail->isSMTP();                          // SMTPの使用宣言
+  $mail->Host       = 'smtp.office365.com';   // SMTPサーバーを指定
+  $mail->SMTPAuth   = true;                 // SMTP authenticationを有効化
+  $mail->Username   = 'shin.miyamoto@jp.ricoh.com';   // SMTPサーバーのユーザ名
+  $mail->Password   = '9gDi2bgV';           // SMTPサーバーのパスワード
+  $mail->SMTPSecure = 'tls';  // 暗号化を有効（tls or ssl）無効の場合はfalse
+  $mail->Port       = 465; // TCPポートを指定（tlsの場合は465や587）
 
-  //宛先
-  $to = 'shin.miyamoto@jp.ricoh.com';
-  $toname = 'shin miyamoto';
+  // 送受信先設定（第二引数は省略可）
+  $mail->setFrom('shin.miyamoto@jp.ricoh.com', '差出人名'); // 送信者
+  $mail->addAddress('shin.miyamoto@jp.ricoh.com', '受信者名');   // 宛先
+  $mail->addReplyTo('shin.miyamoto@jp.ricoh.com', 'お問い合わせ'); // 返信先
+  $mail->addCC('shin.miyamoto@jp.ricoh.com', '受信者名'); // CC宛先
+  $mail->Sender = 'shin.miyamoto@jp.ricoh.com'; // Return-path
 
-  //件名・本文
-  $subject = '宮本テスト';
-  $body = 'test';
+  // 送信内容設定
+  $mail->Subject = 'テスト'; 
+  $mail->Body    = 'テスト';  
 
-  //メール設定
-  //$mail->SMTPDebug = 2; //デバッグ用
-  $mail->isSMTP();
-  $mail->SMTPAuth = true;
-  $mail->Host = $host;
-  $mail->Username = $username;
-  $mail->Password = $password;
-  $mail->SMTPSecure = 'tls';
-  $mail->Port = 587;
-  $mail->CharSet = "utf-8";
-  $mail->Encoding = "base64";
-  $mail->setFrom($from, $fromname);
-  $mail->addAddress($to, $toname);
-  $mail->Subject = $subject;
-  $mail->Body    = $body;
-
-  //メール送信
+  // 送信
   $mail->send();
-  echo '成功';
-
 } catch (Exception $e) {
-  echo '失敗: ', $mail->ErrorInfo;
+  // エラーの場合
+  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
