@@ -52,10 +52,10 @@ define( 'DB_COLLATE', '' );
  * WP_HOME　には設置先URLのトップページの末尾に、/wpをつけてください。
  * ダミーを入力しますので、参照ください
 */
-define('WP_HOME','https://livestreaming-dev.azurewebsites.net/wp');
-define('WP_SITEURL','https://livestreaming-dev.azurewebsites.net');
-/**define('WP_HOME','https://livestreaming.azurewebsites.net/wp');*/*/
-/**define('WP_SITEURL','https://livestreaming.azurewebsites.net/');*/
+/**define('WP_HOME','https://livestreaming-dev.azurewebsites.net/wp');*/
+/**define('WP_SITEURL','https://livestreaming-dev.azurewebsites.net');*/
+define('WP_HOME','https://livestreaming.azurewebsites.net/wp');
+define('WP_SITEURL','https://livestreaming.azurewebsites.net');
 /** 山上コメント */
 
 /**#@+
