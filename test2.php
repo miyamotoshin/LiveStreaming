@@ -6,9 +6,9 @@ use PHPMailer\PHPMailer\Exception;
 echo 'teat2';
 /**require 'PHPMailer/src/Exception.php';*/
 /**require 'PHPMailer/src/PHPMailer.php';*/
-require 'PHPMailer/src/SMTP.php';
+require PHPMailer\src\SMTP.php;
 
-echo 'teat2';
+echo 'teat3';
 // 文字エンコードを指定
 mb_language('uni');
 mb_internal_encoding('UTF-8');
