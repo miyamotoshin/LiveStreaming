@@ -9,7 +9,8 @@ $domain = $_SERVER['HTTP_HOST'];
  * パスを記述してください。
 */
 // $APP_URL = $protocol . $_SERVER['HTTP_HOST'] . '/path/to/directory/';
-$APP_URL = $protocol . $_SERVER['HTTP_HOST'] . '/';
+//$APP_URL = $protocol . $_SERVER['HTTP_HOST'] . '/';
+$APP_URL = $protocol . $_SERVER['HTTP_HOST'] . '/wp/wp-content/themes/';
 
 define('APP_URL', $APP_URL);
 define('APP_PATH', dirname(__FILE__) . '/');
